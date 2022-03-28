@@ -1,0 +1,26 @@
+body {
+    background-image: linear-gradient(rgba(233,214,236,1), rgba(232,204,191,1), rgba(207,185,165,1));
+    background-color: rgba(232,204,191,1);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+   
+}
+
+.header {
+    padding: 30px;
+    margin: 0px;
+    border: 0px;
+    font-size: 30px;
+    background-color: rgba(129,150,143,1);
+}
+
+
+nav {
+    display: inline;
+    float: right;
+    color: black
+}
+ .header nav {
+     font-size: 20px;
+ }
