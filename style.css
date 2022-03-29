@@ -16,11 +16,17 @@ body {
     border: 0px;
     font-size: 30px;
     background-color: rgba(129,150,143,1);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+h1{
+    margin: 0;
 }
 
 
-nav {
-    display: inline;
+.topnav {
     float: right;
 }
  .header nav {
@@ -35,9 +41,40 @@ nav {
 
  .columnleft {
     position: fixed;
+
+ }
+ 
+ #about,#work,#contact,p {
+     text-align: center;
  }
 
-.columnmiddle {
+.columnmiddle,img {
+    display: flex;
+    
+}
+.kitten:hover {
+       border: 5px solid rgba(150,189,198,1);
+}
+
+.contact {
+   display: flex;
+   text-align: center;
+   justify-content: space-between;
+}
+
+.details {
+    list-style: none;
+    display: flex;
+}
+
+.details,li {
+    
+    
+}
+
+footer {
+    padding-left: 30px;
+    text-align: center;
     
 }
 
