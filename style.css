@@ -39,9 +39,8 @@ h1{
     
  }
 
- .columnleft {
-    position: fixed;
-
+ .about {
+    align-content: center;
  }
  
  #about,#work,#contact,p {
@@ -50,30 +49,81 @@ h1{
 
 .columnmiddle {
     display: block;
+    align-items: center;
+}
+
+.workheader {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.work {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.project {
+    position: relative;
     
 }
 
-.mainkitten {
+.container {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(150, 189, 198);
+    background: rgba(150, 189, 198, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+.two {
     display: flex;
-    flex-wrap: wrap;
-    position: fixed;
-    justify-content: space-between;
-    align-items: flex-start;
 }
 
-.kitten {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-self: flex-end;
+#one:hover {
+    
+    border: 5px solid rgba(150,189,198,1);
 }
-
-.kitten:hover {
+#two:hover {
+    
+    border: 5px solid rgba(150,189,198,1);
+}
+#three:hover {
+    
+    border: 5px solid rgba(150,189,198,1);
+}
+#four:hover {
     
     border: 5px solid rgba(150,189,198,1);
 }
 
 .contact {
+    align-self: flex-end;
    display: block;
    text-align: center;
    justify-content: space-between; 
@@ -99,14 +149,17 @@ footer {
     
 }
 
-  /* Large smartphones - navbar changes color */
   @media screen and (max-width: 768px) {
     .row {
       flex-direction: column;
     }
     
   }
-  
 
-
-/*i just finished setting up the first two columns, next we need to style the footer and set media queries and create a read me next*/
+  @media screen and (max-width: 768px) {
+    #one {
+      width: 300px;
+      height: 300px;
+    }
+    
+  }
