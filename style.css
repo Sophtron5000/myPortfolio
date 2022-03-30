@@ -48,28 +48,44 @@ h1{
      text-align: center;
  }
 
-.columnmiddle,img {
-    display: flex;
+.columnmiddle {
+    display: block;
     
 }
+
+.mainkitten {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.kitten {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+
 .kitten:hover {
-       border: 5px solid rgba(150,189,198,1);
+    
+    border: 5px solid rgba(150,189,198,1);
 }
 
 .contact {
-   display: flex;
+   display: block;
    text-align: center;
-   justify-content: space-between;
+   justify-content: space-between; 
+}
+h2 {
+    align-items: center;
 }
 
-.details {
-    list-style: none;
-    display: flex;
-}
 
-.details,li {
-    
-    
+li {
+    display: inline-flex;  
+     
 }
 
 footer {
@@ -77,5 +93,20 @@ footer {
     text-align: center;
     
 }
+.details {
+    list-style: none;
+    display: inline;
+    
+}
+
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+    
+  }
+  
+
 
 /*i just finished setting up the first two columns, next we need to style the footer and set media queries and create a read me next*/
